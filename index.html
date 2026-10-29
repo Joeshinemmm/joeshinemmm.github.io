@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>조유민 — 포트폴리오</title>
+  <meta name="description" content="설계부터 연동과 배포까지 개발하고, 실제 동작으로 검증하는 백엔드 개발자 조유민의 포트폴리오">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="조유민 — 포트폴리오">
+  <meta property="og:description" content="설계부터 연동과 배포까지 개발하고, 실제 동작으로 검증하는 백엔드 개발자 조유민입니다.">
+  <meta property="og:url" content="https://joeshinemmm.github.io/">
+  <link rel="canonical" href="https://joeshinemmm.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/style.css?v=20261030a">
+  <script>if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) document.documentElement.classList.add('motion');</script>
+  <script src="assets/motion.js?v=20261028d" defer></script>
+</head>
+<body class="theme-dark">
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="#top">조유민</a>
+      <nav aria-label="섹션">
+        <ul>
+          <li><a class="link" href="#career">경력</a></li>
+          <li><a class="link" href="#cases">사례</a></li>
+          <li><a class="link" href="#skills">기술</a></li>
+          <li><a class="link" href="#others">그 밖의 경험</a></li>
+          <li><a class="link" href="resume.html">이력서</a></li>
+          <li><a class="link" href="#contact">연락</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-top">
+          <div class="hero-text">
+            <h1><span class="kw" style="--d:800ms">설계</span>부터 <span class="kw" style="--d:1080ms">연동</span>과 <span class="kw" style="--d:1360ms">배포</span>까지 개발하고, 실제 동작으로 <span class="kw" style="--d:1640ms">검증</span>하는 백엔드 개발자 <span class="nowrap"><span class="kw kw-name" style="--d:1920ms">조유민</span><svg class="tick" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="10"/><path d="M5.6 10.4l3 3 5.8-6.2"/></svg>입니다.</span></h1>
+            <p class="lead">개인정보보호 제품의 신규 개발과 기존 상용 솔루션 고도화를 수행했습니다. Java·Spring Boot 기반 DB·백엔드·Gateway 개발을 중심으로 관리 화면과 API, 개인정보 검사 서비스 연동, 고객 환경의 문제 대응, 사내 배포 자동화를 담당했습니다.</p>
+            <p class="links"><a href="mailto:yumin00031324@gmail.com">yumin00031324@gmail.com</a><a href="https://github.com/Joeshinemmm">github.com/Joeshinemmm</a></p>
+          </div>
+          <figure class="portrait">
+            <img src="assets/profile.jpg" alt="조유민 프로필 사진" width="400" height="500">
+            <svg class="frame" viewBox="0 0 212 262" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect x="1" y="1" width="210" height="260" rx="17" pathLength="100"/></svg>
+          </figure>
+        </div>
+
+        <div class="ledger">
+          <h2>주요 개발</h2>
+          <ol>
+            <li style="--i:0"><span class="mark" aria-hidden="true"></span><span class="what"><strong>신규 보안 솔루션의 DB·백엔드·Gateway를 처음부터 설계·개발</strong><span class="how">정책 해시·SSE 변경 알림, Gateway JWT 인증, 보안 이력·통계 API</span></span><a class="where" href="#case-security">신규 보안 솔루션 개발</a></li>
+            <li style="--i:1"><span class="mark" aria-hidden="true"></span><span class="what"><strong>웹 크롤러의 Chromium 미종료 문제 해결</strong><span class="how">종료되지 않던 프로세스 문제 수정, 별도로 DB 연결 감시·SQL 개선</span></span><a class="where" href="#case-crawler">웹 크롤링 솔루션 고도화</a></li>
+            <li style="--i:2"><span class="mark" aria-hidden="true"></span><span class="what"><strong>LLM 응답 스트리밍 처리와 개인정보 검사 연동</strong><span class="how">응답 처리 지점 탐색, 버퍼·문장 분리·Queue·SSE 스트리밍 구현</span></span><a class="where" href="#case-llm">LLM 채팅 서비스 개발</a></li>
+            <li style="--i:3"><span class="mark" aria-hidden="true"></span><span class="what"><strong>Jenkins 배포 자동화 구축, 여러 솔루션의 Pipeline 직접 구성</strong><span class="how">Docker 기반 Jenkins, Jenkinsfile·SSH 테스트 서버 배포</span></span><a class="where" href="#case-cicd">사내 배포 자동화</a></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="career">
+      <div class="container">
+        <h2>경력</h2>
+        <div class="career">
+          <div class="career-head">
+            <h3>(주)이지서티</h3>
+            <p class="tenure">2024.07 ~ 재직 중 <span>(<span data-since="2024-07">2년 3개월</span>)</span></p>
+          </div>
+          <p class="role">연구원, AI서비스팀, 정규직</p>
+          <p class="sum">Java·Spring Boot 보안 제품 백엔드·REST API·DB 개발, Alpine.js 프런트엔드 개발, 크롤러 고도화, Jenkins CI/CD 구축</p>
+          <ol class="timeline">
+            <li class="now" style="--r:5"><span class="t-when">2026.01 ~</span><span class="t-what"><a href="#case-security">신규 보안 솔루션 개발</a></span><span class="t-role">풀스택 개발자</span></li>
+            <li style="--r:4"><span class="t-when">2025.11 ~ 2025.12</span><span class="t-what"><a href="#others">서명·문서·메일 기능 개발</a></span><span class="t-role">풀스택 개발자</span></li>
+            <li style="--r:3"><span class="t-when">2025.04, 2025.08</span><span class="t-what"><a href="#case-llm">LLM 채팅 서비스 개인정보 검사·스트리밍 처리 개발</a></span><span class="t-role">백엔드 개발자</span></li>
+            <li style="--r:2"><span class="t-when">2024.11 ~ 2026.01</span><span class="t-what"><a href="#case-crawler">웹 크롤링 솔루션 고도화·유지보수</a></span><span class="t-role">크롤러 개발자</span></li>
+            <li style="--r:1"><span class="t-when">2024.10 ~</span><span class="t-what"><a href="#case-cicd">사내 배포 자동화</a></span><span class="t-role">CI/CD 담당</span></li>
+            <li style="--r:0"><span class="t-when">2024.08 ~ 2024.09</span><span class="t-what"><a href="#others">제품 성능 테스트</a></span><span class="t-role"></span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases">
+      <div class="container">
+        <h2>사례</h2>
+        <div class="cases">
+
+          <article class="case" id="case-security">
+            <div class="case-head">
+              <h3>신규 보안 솔루션 개발</h3>
+              <p class="case-meta">2026.01 ~<span class="sep" aria-hidden="true"></span>풀스택 개발자</p>
+            </div>
+            <p class="context">다수의 에이전트와 통신하는 신규 보안 솔루션</p>
+            <div class="facets">
+              <div class="facet"><h4>상황</h4><p>다수의 에이전트에 많은 정책을 전달하는 신규 보안 솔루션의 서버를 기획 단계부터 맡았습니다.</p></div>
+              <div class="facet key"><h4>한 일</h4><p>DB·백엔드·Gateway를 설계·개발하고, 정책을 JSON으로 구성해 SHA-256 해시를 계산하고 변경 알림은 SSE로 보내는 방식을 적용했습니다. Gateway JWT 검증과 보안 이력 조회·통계 기능도 구현했습니다.</p></div>
+              <div class="facet"><h4>검증</h4><p>Swagger 호출과 직접 테스트로 API를 확인하고, 서버 로그와 에이전트 연동 동작까지 확인</p></div>
+            </div>
+            <p class="tags"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>REST API</span><span>JWT</span><span>SSE</span><span>Alpine.js</span></p>
+            <details>
+              <summary>자세히 보기</summary>
+              <div class="more">
+                <div><h4>시기</h4><p>2026년 1월 설계, 2월 본격 개발</p></div>
+                <div><h4>배경</h4><p>다수의 에이전트와 통신하는 신규 보안 솔루션의 서버를 초기 기획 단계부터 맡아 개발하고 있습니다.</p></div>
+                <div><h4>맡은 일</h4><p>초기 기획에 참여하고 DB·백엔드·Gateway를 처음부터 설계·개발했습니다. 초기 React 화면은 프런트엔드 개발자가 담당했고 저는 연동을 지원했습니다. 이후 Alpine.js 관리 화면은 기존 UI 개발자와 협업해 개발했습니다. 현재는 서버와 관리 화면 개발을 함께 맡고 있습니다.</p></div>
+                <div><h4>문제와 접근</h4>
+                  <ul>
+                    <li><b>정책 동기화:</b> 많은 정책과 에이전트 사이의 통신을 가볍게 구성하고 방화벽 제약을 고려하기 위해, 정책을 JSON으로 구성해 SHA-256 해시를 계산하는 방식과 SSE 연결을 적용했습니다. 해시 생성과 정책 변경 알림은 별도 흐름으로 구현했습니다.</li>
+                    <li><b>인증 처리:</b> Gateway에서 JWT 검증과 인증 실패 응답을 처리하고, 서버가 참조하는 연동 주소를 환경 설정으로 분리했습니다.</li>
+                    <li><b>관리 기능:</b> 조직 계층을 반영한 자산번호 일괄 부여 기능과, 보안 이력의 검색·조회 조건을 서버 처리와 연결하는 REST API, 보안 통계 집계·Excel 다운로드 기능을 구현했습니다.</li>
+                  </ul>
+                </div>
+                <div><h4>검증</h4><p>Swagger로 API를 호출하거나 직접 테스트하며 동작을 확인하고, 서버의 정상 로그를 확인했습니다. 에이전트와 주고받는 정책 통신은 에이전트 개발자와 함께 점검했고, 오류가 생기면 서버와 에이전트 양쪽 로그를 보며 디버깅했습니다.</p></div>
+                <div><h4>배운 점</h4><p>서버를 처음부터 맡아 설계·개발하며 쌓은 기술과 시행착오가, 이후 개발에서 설계 기준이 되었습니다.</p></div>
+              </div>
+            </details>
+          </article>
+
+          <article class="case" id="case-crawler">
+            <div class="case-head">
+              <h3>웹 크롤링 기반 개인정보 탐지 솔루션 고도화·문제 해결</h3>
+              <p class="case-meta">2024.11 ~ 2026.01<span class="sep" aria-hidden="true"></span>크롤러 개발자</p>
+            </div>
+            <p class="context">고객사에 납품된 상용 솔루션의 고도화·유지보수</p>
+            <div class="facets">
+              <div class="facet"><h4>상황</h4><p>고객사가 제기한 처리 속도·서버 메모리 문제의 원인 조사를 맡았습니다.</p></div>
+              <div class="facet key"><h4>한 일</h4><p>조사 중 종료되지 않고 남는 Chromium 프로세스를 찾아 수정했습니다. 별도로 DB 연결 감시와 기존 SQL 문제도 개선했습니다.</p></div>
+              <div class="facet"><h4>검증</h4><p>수정 후 Linux 명령으로 잔존 프로세스 소멸 확인</p></div>
+            </div>
+            <p class="tags"><span>Java</span><span>SQL</span><span>MariaDB</span><span>Selenium·Chromium</span><span>Linux</span></p>
+            <details>
+              <summary>자세히 보기</summary>
+              <div class="more">
+                <div><h4>시기</h4><p>2024년 11월 ~ 2026년 1월 고도화·유지보수, 이후 오류 대응 지원</p></div>
+                <div><h4>배경</h4><p>고객사에 이미 판매·납품된 웹 크롤링 기반 개인정보 탐지 솔루션의 유지보수와 고도화를 담당했습니다. 기존 코드와 크롤러 구조를 분석하고, 고객 요청에 따른 기능 변경과 동적 페이지 수집 처리를 개선했습니다.</p></div>
+                <div><h4>문제와 접근</h4>
+                  <ul>
+                    <li><b>브라우저 프로세스 미종료:</b> 담당 엔지니어가 전달한 고객의 처리 속도·서버 메모리 문제를 조사하던 중, 종료되지 않고 남아 있는 Chromium 프로세스를 찾아 수정했습니다.</li>
+                    <li><b>DB 연결 감시:</b> 애플리케이션 로그와 웹 요청·응답을 관찰하며 DB 연결·감시 문제를 조사하고 개선했습니다. 구현에는 DB 연결 사용률에 따른 작업 일시정지·재개, 점검 간격과 자원 정리 처리가 포함됩니다.</li>
+                    <li><b>SQL 개선:</b> 기존 SQL 쿼리의 문제를 분석·수정해 정상화했습니다.</li>
+                  </ul>
+                </div>
+                <div><h4>검증</h4>
+                  <ul>
+                    <li>수정 후 Linux 프로세스 확인 명령으로 잔존 Chromium 프로세스가 사라진 것을 확인했습니다.</li>
+                    <li>DB 연결 사용률이 일정 비율 이상일 때 작업이 일시정지하는 것을 로그로 확인했습니다.</li>
+                  </ul>
+                </div>
+                <div><h4>배운 점</h4><p>기존 코드에서 쿼리 오류와 예외 처리·기본 기능 확인이 부족한 부분을 보완하면서, 예외 상황과 기본 동작을 직접 확인하는 것을 기본으로 삼게 되었습니다.</p></div>
+              </div>
+            </details>
+          </article>
+
+          <article class="case" id="case-llm">
+            <div class="case-head">
+              <h3>LLM 채팅 서비스 개인정보 검사·스트리밍 처리 개발</h3>
+              <p class="case-meta">2025.04, 2025.08<span class="sep" aria-hidden="true"></span>백엔드 개발자</p>
+            </div>
+            <p class="context">오픈소스 LLM 채팅 서비스(Open WebUI)와 사내 개인정보 검사 API 연동</p>
+            <div class="facets">
+              <div class="facet"><h4>상황</h4><p>질문과 AI 응답 모두에 비식별 결과를 표시하기 위해, 오픈소스 채팅 서비스의 처리 흐름에 검사를 연결하는 개발을 맡았습니다.</p></div>
+              <div class="facet key"><h4>한 일</h4><p>기존 코드에서 LLM 요청·응답을 처리하는 지점을 찾아 검사 호출을 넣고, 응답 버퍼·문장 분리·Queue·SSE로 스트리밍 처리를 구현했습니다.</p></div>
+              <div class="facet"><h4>검증</h4><p>질문·AI 응답 양쪽의 비식별 표시를 화면에서 확인(화면 표시 기준)</p></div>
+            </div>
+            <p class="tags"><span>Python</span><span>Svelte·TypeScript</span><span>WebSocket</span><span>asyncio·Queue</span><span>SSE</span></p>
+            <details>
+              <summary>자세히 보기</summary>
+              <div class="more">
+                <div><h4>시기</h4><p>2025년 4월 집중 개발, 2025년 8월 스트리밍 처리 재개발</p></div>
+                <div><h4>배경</h4><p>오픈소스 LLM 채팅 서비스(Open WebUI)에 사내 개인정보 검사 API를 연결해, 사용자 질문과 AI 응답에 비식별 결과를 표시하는 작업이었습니다.</p></div>
+                <div><h4>접근</h4><p>코드에 로그를 추가하고 실제 웹을 실행해 개발자 도구로 요청·응답 흐름을 추적하며 호출 지점을 찾았습니다. 초기 HTTP 호출을 WebSocket 기반 검사 요청·결과 수신으로 바꾸고, 화면에서는 원본 메시지와 표시용 비식별 결과를 구분해 처리했습니다. 8월에는 응답을 모아 완료 후 검사하던 기존 흐름을 스트리밍 방식으로 전환하며, 응답 버퍼와 문장 분리, asyncio 수신 태스크·Queue를 이용한 결과 전달, SSE 형식 재구성을 구현했습니다.</p></div>
+                <div><h4>표시 흐름</h4>
+                  <div class="flow">
+                    <div><p class="lane">질문</p><ol><li style="--i:0">사용자 질문</li><li class="arrow" aria-hidden="true">→</li><li style="--i:1">사내 검사 API</li><li class="arrow" aria-hidden="true">→</li><li style="--i:2" class="end">비식별 결과 표시</li></ol></div>
+                    <div><p class="lane">AI 응답 (후속 스트리밍 처리)</p><ol><li style="--i:0">응답 버퍼·문장 분리</li><li class="arrow" aria-hidden="true">→</li><li style="--i:1">사내 검사 API</li><li class="arrow" aria-hidden="true">→</li><li style="--i:2">Queue로 결과 전달</li><li class="arrow" aria-hidden="true">→</li><li style="--i:3" class="end">SSE 형식으로 비식별 결과 표시</li></ol></div>
+                    <p class="note">흐름 설명용 그림입니다. 화면 표시 기준이며, 모델에 전달되는 원문의 처리 여부를 나타내지 않습니다.</p>
+                  </div>
+                </div>
+                <div><h4>검증</h4><p>개인정보가 포함된 질문을 실제로 입력해, 질문과 AI 응답 양쪽에 비식별 결과가 표시되는 것을 화면에서 확인했습니다. 이 확인은 화면 표시 기준이며, 모델에 전달되는 원문이나 저장 데이터의 처리 검증과는 별개입니다.</p></div>
+                <div><h4>배운 점</h4><p>오랜만에 쓰는 Python과 처음 접한 Svelte로 된 코드였지만, 로그를 추가하고 실제로 실행하며 흐름을 따라가는 과정에서 디버깅의 중요성을 체감했습니다.</p></div>
+              </div>
+            </details>
+          </article>
+
+          <article class="case" id="case-cicd">
+            <div class="case-head">
+              <h3>사내 배포 자동화 도입·확대</h3>
+              <p class="case-meta">2024.10 ~<span class="sep" aria-hidden="true"></span>CI/CD 담당</p>
+            </div>
+            <p class="context">Jenkins 배포 자동화, 여러 솔루션의 Pipeline 직접 구성</p>
+            <div class="facets">
+              <div class="facet"><h4>상황</h4><p>제품 배포 자동화를 맡아 Jenkins 도입부터 직접 진행했습니다.</p></div>
+              <div class="facet key"><h4>한 일</h4><p>Docker로 Jenkins를 실행해 여러 솔루션의 배포 Pipeline을 직접 구성하고, Jenkinsfile과 SSH 연결로 테스트 서버 배포를 자동화했습니다.</p></div>
+              <div class="facet"><h4>검증</h4><p>성공 로그 확인 후 대상 서버에서 애플리케이션 구동 확인</p></div>
+            </div>
+            <p class="tags"><span>Jenkins</span><span>Docker</span><span>GitLab</span><span>SSH</span><span>Shell Script</span><span>Gradle·Nexus</span></p>
+            <details>
+              <summary>자세히 보기</summary>
+              <div class="more">
+                <div><h4>시기</h4><p>2024년 10월부터 담당</p></div>
+                <div><h4>배경</h4><p>팀장의 요청을 계기로 제품 배포 자동화를 맡아, Jenkins 도입부터 진행했습니다.</p></div>
+                <div><h4>맡은 일과 접근</h4>
+                  <ul>
+                    <li>Docker로 Jenkins를 실행하고, 처음 다루는 도구였지만 AI 도구를 활용해 익히며, 담당하던 기존 솔루션부터 차례로 Pipeline과 설정을 직접 구성했습니다.</li>
+                    <li>다른 제품 담당자들에게 JAR·WAR를 직접 빌드해 올리는 것보다 편리하고 여러 작업을 지원한다는 점을 설명하며 도입을 도왔습니다.</li>
+                    <li>Jenkinsfile을 작성해 GitLab에서 관리하고, Jenkins의 SSH 연결을 프로젝트 설정에 적용해 테스트 서버 배포와 환경 설정을 자동화했습니다.</li>
+                    <li>이후 빌드 산출물의 서버 전달과 보관 전송을 구성하고, 이후 신규 보안 솔루션에서는 Jenkinsfile의 환경 설정 경로와 브랜치 설정을 수정했습니다. 기존 Nexus 서버를 활용할 수 있도록 Gradle 산출물 게시 설정도 구성했습니다.</li>
+                  </ul>
+                </div>
+                <div><h4>배포 흐름</h4>
+                  <div class="flow">
+                    <div><ol><li style="--i:0">GitLab의 Jenkinsfile</li><li class="arrow" aria-hidden="true">→</li><li style="--i:1">Jenkins(Docker)</li><li class="arrow" aria-hidden="true">→</li><li style="--i:2">빌드</li><li class="arrow" aria-hidden="true">→</li><li style="--i:3">SSH 배포</li><li class="arrow" aria-hidden="true">→</li><li style="--i:4">테스트 서버</li><li class="arrow" aria-hidden="true">→</li><li style="--i:5" class="end">성공 로그·구동 확인</li></ol></div>
+                    <p class="note">흐름 설명용 그림입니다. 서버 구성과 접속 설정은 표시하지 않습니다.</p>
+                  </div>
+                </div>
+                <div><h4>검증</h4><p>Jenkins 성공 로그를 확인한 뒤 대상 서버에서 애플리케이션이 실제로 구동되는지 확인했습니다. 신규 보안 솔루션의 설정을 수정한 뒤에는 배포 테스트에서 정상 동작을 확인했습니다.</p></div>
+              </div>
+            </details>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2>기술</h2>
+        <div class="skills">
+          <div class="skill">
+            <h3>언어·백엔드</h3>
+            <ul class="chips">
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/java.svg" alt="" width="14" height="14"></i>Java</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/spring.svg" alt="" width="14" height="14"></i>Spring Boot</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/python.svg" alt="" width="14" height="14"></i>Python</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/selenium.svg" alt="" width="14" height="14"></i>Selenium·Chromium</li>
+            </ul>
+            <p class="used">보안 제품 API·Gateway, 기존 웹 크롤러 개선, 채팅 서비스 검사 연동</p>
+          </div>
+          <div class="skill">
+            <h3>데이터베이스</h3>
+            <ul class="chips">
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/postgresql.svg" alt="" width="14" height="14"></i>PostgreSQL</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/mariadb.svg" alt="" width="14" height="14"></i>MariaDB</li>
+              <li class="chip"><i class="ico-generic" aria-hidden="true"></i>SQL</li>
+            </ul>
+            <p class="used">신규 보안 제품의 PostgreSQL 데이터 구조·SQL 설계, 기존 제품의 MariaDB 연결 감시와 SQL 개선</p>
+          </div>
+          <div class="skill">
+            <h3>프런트엔드·연동</h3>
+            <ul class="chips">
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/html5.svg" alt="" width="14" height="14"></i>HTML</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/css3.svg" alt="" width="14" height="14"></i>CSS</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/javascript.svg" alt="" width="14" height="14"></i>JavaScript</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/alpinejs.svg" alt="" width="14" height="14"></i>Alpine.js</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/svelte.svg" alt="" width="14" height="14"></i>Svelte</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/typescript.svg" alt="" width="14" height="14"></i>TypeScript</li>
+              <li class="chip"><i class="ico-generic" aria-hidden="true"></i>REST API</li>
+              <li class="chip"><i class="ico-generic" aria-hidden="true"></i>WebSocket</li>
+              <li class="chip"><i class="ico-generic" aria-hidden="true"></i>SSE</li>
+              <li class="chip"><i class="ico-generic" aria-hidden="true"></i>asyncio·Queue</li>
+            </ul>
+            <p class="used">관리 화면 개발과 API 연결, 검사 요청·결과 수신과 스트리밍 처리</p>
+          </div>
+          <div class="skill">
+            <h3>빌드·배포</h3>
+            <ul class="chips">
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/git.svg" alt="" width="14" height="14"></i>Git</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/gitlab.svg" alt="" width="14" height="14"></i>GitLab</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/jenkins.svg" alt="" width="14" height="14"></i>Jenkins</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/docker.svg" alt="" width="14" height="14"></i>Docker</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/ssh.svg" alt="" width="14" height="14"></i>SSH</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/bash.svg" alt="" width="14" height="14"></i>Shell Script</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/gradle.svg" alt="" width="14" height="14"></i>Gradle</li>
+              <li class="chip"><i class="ico-generic" aria-hidden="true"></i>Nexus</li>
+            </ul>
+            <p class="used">배포 자동화 구성, Jenkinsfile 관리, 산출물 게시 설정</p>
+          </div>
+          <div class="skill">
+            <h3>운영·진단</h3>
+            <ul class="chips">
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/linux.svg" alt="" width="14" height="14"></i>Linux</li>
+              <li class="chip"><i class="ico-generic" aria-hidden="true"></i>브라우저 개발자 도구</li>
+            </ul>
+            <p class="used">프로세스·로그 확인, 처리 흐름 추적</p>
+          </div>
+          <div class="skill">
+            <h3>그 밖의 기술</h3>
+            <ul class="chips">
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/csharp.svg" alt="" width="14" height="14"></i>C#/WPF</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/postman.svg" alt="" width="14" height="14"></i>Postman</li>
+              <li class="chip"><i class="ico-generic" aria-hidden="true"></i>JMeter</li>
+              <li class="chip"><i aria-hidden="true"><img src="assets/icons/amazonwebservices.svg" alt="" width="14" height="14"></i>AWS</li>
+            </ul>
+            <p class="used">Windows 앱·스캐너 빌드, 성능 테스트</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="others">
+      <div class="container">
+        <h2>그 밖의 경험</h2>
+        <div class="others">
+          <div class="other"><h3>Windows 앱·스캐너</h3><p>신규 보안 솔루션의 C#/WPF 앱에서 서비스 연결과 시작·종료 처리, 스캔 중단·취소 기능을 다뤘고, Windows 스캐너의 네이티브 빌드·패키징 작업도 수행했습니다.</p></div>
+          <div class="other"><h3>서명·문서·메일 기능</h3><p>QR 인증 기반 업무 서비스에서 서명과 메일 기능의 서버와 화면을 함께 맡아 2025년 11월부터 12월까지 개발했습니다. 서명 입력·검증과 Canvas 좌표 보정, PDF 생성·전달 및 메일 첨부 기능을 구현했습니다.</p></div>
+          <div class="other"><h3>성능 테스트</h3><p>2024년 8~9월 Postman·JMeter로 개인정보보호 제품의 임계치·성능 테스트를 수행하고, 결과는 JMeter 그래프와 Excel로 시각화했습니다. 또한 AWS에 제품을 설치해 환경별 임계치를 테스트했습니다.</p></div>
+          <div class="other"><h3>고객 현장 기술 지원</h3><p>기존 솔루션 지원 과정에서 엔지니어가 해결하지 못한 문제를 고객 현장에서 조사·해결했습니다.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2>연락</h2>
+        <p>이력서는 별도 페이지에서 보고 PDF로 저장할 수 있습니다.</p>
+        <p class="links"><a href="mailto:yumin00031324@gmail.com">yumin00031324@gmail.com</a><a href="https://github.com/Joeshinemmm">github.com/Joeshinemmm</a><a href="resume.html">이력서 보기</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><span>© 조유민</span><span>제품·고객 정보는 일반화해 작성했습니다.</span></div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-since]').forEach(function (el) {
+      var p = el.getAttribute('data-since').split('-');
+      var now = new Date();
+      var months = (now.getFullYear() - Number(p[0])) * 12 + (now.getMonth() + 1 - Number(p[1]));
+      if (months < 0) return;
+      var y = Math.floor(months / 12), m = months % 12;
+      el.textContent = ((y ? y + '년' : '') + (m ? ' ' + m + '개월' : '')).trim() || '0개월';
+    });
+  </script>
+</body>
+</html>
