@@ -99,6 +99,8 @@ ul, ol { padding: 0; list-style: none; }
 .career-head .tenure span { color: var(--muted); }
 .career .role { color: var(--muted); font-size: 15px; margin-top: 2px; }
 .career .sum { margin-top: 14px; max-width: var(--measure); }
+.career .edu { margin-top: 18px; color: var(--muted); font-size: 15px; }
+.career .edu span { color: var(--text); font-weight: 600; margin-right: 10px; }
 .timeline { margin-top: 28px; border-top: 1px solid var(--rule); }
 .timeline li { display: grid; grid-template-columns: 170px minmax(0, 1fr) auto; gap: 16px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--rule); }
 .t-when { color: var(--faint); font-size: 14px; }
