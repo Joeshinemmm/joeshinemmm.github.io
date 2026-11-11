@@ -18,10 +18,12 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/style.css?v=20261102a">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/site.css?v=20261111f">
+  <script>document.documentElement.classList.add('js');</script>
   <script>if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) document.documentElement.classList.add('motion');</script>
   <script src="assets/motion.js?v=20261028d" defer></script>
+  <script src="assets/site.js?v=20261111f" defer></script>
 </head>
 <body class="theme-dark">
   <a class="skip" href="#main">본문으로 건너뛰기</a>
@@ -39,39 +41,30 @@
           <li><a class="link" href="#contact">연락</a></li>
         </ul>
       </nav>
+      <p class="clock" aria-hidden="true"><span>LOCAL TIME</span> <b data-clock>--:--:--</b></p>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="container">
-        <div class="hero-top">
-          <div class="hero-text">
-            <h1><span class="kw" style="--d:800ms">설계</span>부터 <span class="kw" style="--d:1080ms">연동</span>과 <span class="kw" style="--d:1360ms">배포</span>까지 개발하고, 실제 동작으로 <span class="kw" style="--d:1640ms">검증</span>하는 백엔드 개발자 <span class="nowrap"><span class="kw kw-name" style="--d:1920ms">조유민</span><svg class="tick" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="10"/><path d="M5.6 10.4l3 3 5.8-6.2"/></svg>입니다.</span></h1>
-            <p class="lead">개인정보보호 제품의 신규 개발과 기존 상용 솔루션 고도화를 수행했습니다. Java·Spring Boot 기반 DB·백엔드·Gateway 개발을 중심으로 관리 화면과 API, 개인정보 검사 서비스 연동, 고객 환경의 문제 대응, 사내 배포 자동화를 담당했습니다.</p>
-            <p class="links"><a href="mailto:yumin00031324@gmail.com">yumin00031324@gmail.com</a><a href="https://github.com/Joeshinemmm">github.com/Joeshinemmm</a></p>
-          </div>
-          <figure class="portrait">
-            <img src="assets/profile.jpg" alt="조유민 프로필 사진" width="400" height="500">
-            <svg class="frame" viewBox="0 0 212 262" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect x="1" y="1" width="210" height="260" rx="17" pathLength="100"/></svg>
-          </figure>
+    <section class="hero space" id="top">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="chrome"><span class="ph">설계부터 배포까지 개발하고,</span> <span class="ph">동작으로 검증하는 백엔드 개발자 <span class="nowrap">조유민입니다.</span></span></h1>
+          <p class="lead">개인정보보호 제품의 신규 개발과 기존 상용 솔루션 고도화를 수행했습니다. Java·Spring Boot 기반 DB·백엔드·Gateway 개발을 중심으로 관리 화면과 API, 개인정보 검사 서비스 연동, 고객 환경의 문제 대응, 사내 배포 자동화를 담당했습니다.</p>
+          <p class="links"><a href="mailto:yumin00031324@gmail.com">yumin00031324@gmail.com</a><a href="https://github.com/Joeshinemmm">github.com/Joeshinemmm</a></p>
         </div>
-
-        <div class="ledger">
-          <h2>주요 개발</h2>
-          <ol>
-            <li style="--i:0"><span class="mark" aria-hidden="true"></span><span class="what"><strong>신규 보안 솔루션의 DB·백엔드·Gateway를 처음부터 설계·개발</strong><span class="how">정책 해시·SSE 변경 알림, Gateway JWT 인증, 보안 이력·통계 API</span></span><a class="where" href="#case-security">신규 보안 솔루션 개발</a></li>
-            <li style="--i:1"><span class="mark" aria-hidden="true"></span><span class="what"><strong>웹 크롤러의 Chromium 미종료 문제 해결</strong><span class="how">종료되지 않던 프로세스 문제 수정, 별도로 DB 연결 감시·SQL 개선</span></span><a class="where" href="#case-crawler">웹 크롤링 솔루션 고도화</a></li>
-            <li style="--i:2"><span class="mark" aria-hidden="true"></span><span class="what"><strong>LLM 응답 스트리밍 처리와 개인정보 검사 연동</strong><span class="how">응답 처리 지점 탐색, 버퍼·문장 분리·Queue·SSE 스트리밍 구현</span></span><a class="where" href="#case-llm">LLM 채팅 서비스 개발</a></li>
-            <li style="--i:3"><span class="mark" aria-hidden="true"></span><span class="what"><strong>Jenkins 배포 자동화 구축, 여러 솔루션의 Pipeline 직접 구성</strong><span class="how">Docker 기반 Jenkins, Jenkinsfile·SSH 테스트 서버 배포</span></span><a class="where" href="#case-cicd">사내 배포 자동화</a></li>
-          </ol>
-        </div>
+        <nav class="dock" aria-label="사례 바로 보기">
+          <a class="tile" href="#case-security"><span class="tile-face" aria-hidden="true">01</span><span class="tile-name">신규 보안 솔루션 개발</span></a>
+          <a class="tile" href="#case-crawler"><span class="tile-face" aria-hidden="true">02</span><span class="tile-name">웹 크롤링 솔루션 고도화</span></a>
+          <a class="tile" href="#case-llm"><span class="tile-face" aria-hidden="true">03</span><span class="tile-name">LLM 채팅 서비스 개발</span></a>
+          <a class="tile" href="#case-cicd"><span class="tile-face" aria-hidden="true">04</span><span class="tile-name">사내 배포 자동화</span></a>
+        </nav>
       </div>
     </section>
 
     <section class="section" id="career">
       <div class="container">
-        <h2>경력</h2>
+        <h2 data-count="06">경력</h2>
         <div class="career">
           <div class="career-head">
             <h3>(주)이지서티</h3>
@@ -92,17 +85,27 @@
       </div>
     </section>
 
-    <section class="section" id="cases">
+    <section class="section space" id="cases">
       <div class="container">
-        <h2>사례</h2>
-        <div class="cases">
+        <h2 data-count="04">사례</h2>
+        <div class="cases-layout">
+          <nav class="case-index" aria-label="사례 목차">
+            <ol>
+            <li><a href="#case-security">신규 보안 솔루션 개발</a></li>
+            <li><a href="#case-crawler">웹 크롤링 솔루션 고도화</a></li>
+            <li><a href="#case-llm">LLM 채팅 서비스 개발</a></li>
+            <li><a href="#case-cicd">사내 배포 자동화</a></li>
+            </ol>
+          </nav>
+          <div class="cases">
 
           <article class="case" id="case-security">
+            <p class="case-lead"><strong>신규 보안 솔루션의 DB·백엔드·Gateway를 처음부터 설계·개발</strong><span class="how">정책 해시·SSE 변경 알림, Gateway JWT 인증, 보안 이력·통계 API</span></p>
             <div class="case-head">
               <h3>신규 보안 솔루션 개발</h3>
               <p class="case-meta">2026.01 ~<span class="sep" aria-hidden="true"></span>풀스택 개발자</p>
             </div>
-            <p class="context">다수의 에이전트와 통신하는 신규 보안 솔루션</p>
+            <p class="context" data-lit>다수의 에이전트와 통신하는 신규 보안 솔루션</p>
             <div class="facets">
               <div class="facet"><h4>상황</h4><p>다수의 에이전트에 많은 정책을 전달하는 신규 보안 솔루션의 서버를 기획 단계부터 맡았습니다.</p></div>
               <div class="facet key"><h4>한 일</h4><p>DB·백엔드·Gateway를 설계·개발하고, 정책을 JSON으로 구성해 SHA-256 해시를 계산하고 변경 알림은 SSE로 보내는 방식을 적용했습니다. Gateway JWT 검증과 보안 이력 조회·통계 기능도 구현했습니다.</p></div>
@@ -129,11 +132,12 @@
           </article>
 
           <article class="case" id="case-crawler">
+            <p class="case-lead"><strong>웹 크롤러의 Chromium 미종료 문제 해결</strong><span class="how">종료되지 않던 프로세스 문제 수정, 별도로 DB 연결 감시·SQL 개선</span></p>
             <div class="case-head">
               <h3>웹 크롤링 기반 개인정보 탐지 솔루션 고도화·문제 해결</h3>
               <p class="case-meta">2024.11 ~ 2026.01<span class="sep" aria-hidden="true"></span>크롤러 개발자</p>
             </div>
-            <p class="context">고객사에 납품된 상용 솔루션의 고도화·유지보수</p>
+            <p class="context" data-lit>고객사에 납품된 상용 솔루션의 고도화·유지보수</p>
             <div class="facets">
               <div class="facet"><h4>상황</h4><p>고객사가 제기한 처리 속도·서버 메모리 문제의 원인 조사를 맡았습니다.</p></div>
               <div class="facet key"><h4>한 일</h4><p>조사 중 종료되지 않고 남는 Chromium 프로세스를 찾아 수정했습니다. 별도로 DB 연결 감시와 기존 SQL 문제도 개선했습니다.</p></div>
@@ -164,11 +168,12 @@
           </article>
 
           <article class="case" id="case-llm">
+            <p class="case-lead"><strong>LLM 응답 스트리밍 처리와 개인정보 검사 연동</strong><span class="how">응답 처리 지점 탐색, 버퍼·문장 분리·Queue·SSE 스트리밍 구현</span></p>
             <div class="case-head">
               <h3>LLM 채팅 서비스 개인정보 검사·스트리밍 처리 개발</h3>
               <p class="case-meta">2025.04, 2025.08<span class="sep" aria-hidden="true"></span>백엔드 개발자</p>
             </div>
-            <p class="context">오픈소스 LLM 채팅 서비스(Open WebUI)와 사내 개인정보 검사 API 연동</p>
+            <p class="context" data-lit>오픈소스 LLM 채팅 서비스(Open WebUI)와 사내 개인정보 검사 API 연동</p>
             <div class="facets">
               <div class="facet"><h4>상황</h4><p>질문과 AI 응답 모두에 비식별 결과를 표시하기 위해, 오픈소스 채팅 서비스의 처리 흐름에 검사를 연결하는 개발을 맡았습니다.</p></div>
               <div class="facet key"><h4>한 일</h4><p>기존 코드에서 LLM 요청·응답을 처리하는 지점을 찾아 검사 호출을 넣고, 응답 버퍼·문장 분리·Queue·SSE로 스트리밍 처리를 구현했습니다.</p></div>
@@ -195,11 +200,12 @@
           </article>
 
           <article class="case" id="case-cicd">
+            <p class="case-lead"><strong>Jenkins 배포 자동화 구축, 여러 솔루션의 Pipeline 직접 구성</strong><span class="how">Docker 기반 Jenkins, Jenkinsfile·SSH 테스트 서버 배포</span></p>
             <div class="case-head">
               <h3>사내 배포 자동화 도입·확대</h3>
               <p class="case-meta">2024.10 ~<span class="sep" aria-hidden="true"></span>CI/CD 담당</p>
             </div>
-            <p class="context">Jenkins 배포 자동화, 여러 솔루션의 Pipeline 직접 구성</p>
+            <p class="context" data-lit>Jenkins 배포 자동화, 여러 솔루션의 Pipeline 직접 구성</p>
             <div class="facets">
               <div class="facet"><h4>상황</h4><p>제품 배포 자동화를 맡아 Jenkins 도입부터 직접 진행했습니다.</p></div>
               <div class="facet key"><h4>한 일</h4><p>Docker로 Jenkins를 실행해 여러 솔루션의 배포 Pipeline을 직접 구성하고, Jenkinsfile과 SSH 연결로 테스트 서버 배포를 자동화했습니다.</p></div>
@@ -230,13 +236,14 @@
             </details>
           </article>
 
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="skills">
       <div class="container">
-        <h2>기술</h2>
+        <h2 data-count="06">기술</h2>
         <div class="skills">
           <div class="skill">
             <h3>언어·백엔드</h3>
@@ -311,7 +318,7 @@
 
     <section class="section" id="others">
       <div class="container">
-        <h2>그 밖의 경험</h2>
+        <h2 data-count="05">그 밖의 경험</h2>
         <div class="others">
           <div class="other"><h3>Windows 앱·스캐너</h3><p>신규 보안 솔루션의 C#/WPF 앱에서 서비스 연결과 시작·종료 처리, 스캔 중단·취소 기능을 다뤘고, Windows 스캐너의 네이티브 빌드·패키징 작업도 수행했습니다.</p></div>
           <div class="other"><h3>서명·문서·메일 기능</h3><p>QR 인증 기반 업무 서비스에서 서명과 메일 기능의 서버와 화면을 함께 맡아 2025년 11월부터 12월까지 개발했습니다. 서명 입력·검증과 Canvas 좌표 보정, PDF 생성·전달 및 메일 첨부 기능을 구현했습니다.</p></div>
@@ -322,18 +329,23 @@
       </div>
     </section>
 
-    <section class="section contact" id="contact">
+    <section class="section contact space" id="contact">
       <div class="container">
-        <h2>연락</h2>
-        <p>이력서는 별도 페이지에서 보고 PDF로 저장할 수 있습니다.</p>
+        <h2 class="tail">연락</h2>
+        <p data-lit>이력서는 별도 페이지에서 보고 PDF로 저장할 수 있습니다.</p>
         <p class="links"><a href="mailto:yumin00031324@gmail.com">yumin00031324@gmail.com</a><a href="https://github.com/Joeshinemmm">github.com/Joeshinemmm</a><a href="resume.html">이력서 보기</a></p>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer space">
     <div class="container"><span>© 조유민</span><span>제품·고객 정보는 일반화해 작성했습니다.</span></div>
   </footer>
+
+  <div class="hud" aria-hidden="true">
+    <span>SCROLL <b data-scroll>000</b>%</span>
+    <span>X <b data-x>0000</b> Y <b data-y>0000</b></span>
+  </div>
 
   <script>
     document.querySelectorAll('[data-since]').forEach(function (el) {

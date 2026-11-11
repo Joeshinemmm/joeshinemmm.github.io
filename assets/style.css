@@ -177,6 +177,10 @@ ul, ol { padding: 0; list-style: none; }
 .dot { color: var(--accent); }
 .resume .intro { font-size: 19px; line-height: 1.6; margin-top: 20px; max-width: var(--measure); }
 .resume .links { color: var(--muted); }
+.r-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: start; }
+.r-id { min-width: 0; }
+.resume .birth { margin-top: 12px; font-size: 15px; color: var(--muted); }
+.r-photo { width: 112px; height: 140px; object-fit: cover; border-radius: 10px; border: 1px solid var(--rule); }
 .r-section { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 24px; padding: 40px 0; border-top: 1px solid var(--rule); }
 .r-section:first-of-type { margin-top: 48px; }
 .r-section > h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.3; }
@@ -210,6 +214,8 @@ ul, ol { padding: 0; list-style: none; }
   .skill, .other { grid-template-columns: 1fr; gap: 8px; }
   .skill .used { grid-column: 1; margin-top: 0; }
   .resume { padding-top: 40px; }
+  .r-head { gap: 20px; }
+  .r-photo { width: 84px; height: 105px; }
   .r-section { grid-template-columns: 1fr; gap: 12px; padding: 32px 0; }
 }
 @media (max-width: 374px) {
@@ -227,6 +233,8 @@ ul, ol { padding: 0; list-style: none; }
   .resume { padding: 0; max-width: none; }
   .resume h1 { font-size: 30pt; }
   .resume .intro { font-size: 12pt; }
+  .resume .birth { font-size: 10.5pt; margin-top: 6pt; }
+  .r-photo { width: 26mm; height: 32.5mm; border-radius: 2mm; }
   .r-section { grid-template-columns: 110px minmax(0, 1fr); padding: 14pt 0; break-inside: avoid-page; }
   .r-section > h2 { font-size: 14pt; }
   .r-item { break-inside: avoid; }
